@@ -121,7 +121,7 @@
     <div class="hero-body">
       <img src="static/images/fig2.png" alt="Poster Dataset Distillation (PoDD)" class="center-image" style="max-width: 100%; height: auto;">
       <h2 class="subtitle has-text-centered">
-        We propose a simple yet effective method, named <strong>SED</strong>, to learn with noisy labels in a <strong>S</strong>elf-adaptiv<strong>E</strong> and class-balance<strong>D</strong> manner. We first divide the training set into a clean subset and a noisy subset based on global and local thresholds that are dynamically updated. Our threshold design enables self-adaptivity and class balance in sample selection. We then employ a mean-teacher model to correct labels for noisy samples. Based on the correction confidence, SED adaptively assigns different weights to label-corrected noisy samples and uses them for training. Finally, SED further boosts the model performance by imposing an additional consistency regularization loss on selected clean samples. The final objective loss integrates the classification losses on clean and noisy samples and the regularization loss on clean samples.
+        We propose a simple yet effective method, named <strong>SED</strong>, to learn with noisy labels in a <strong>S</strong>elf-adaptiv<strong>E</strong> and class-balance<strong>D</strong> manner. <strong>SED</strong> divides the training set into clean and noisy subsets using dynamically updated thresholds, employs a mean-teacher model for label correction, and adaptively weights noisy samples based on correction confidence. The final objective integrates classification losses and consistency regularization to boost model performance.
       </h2>
     </div>
   </div>
