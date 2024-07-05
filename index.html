@@ -84,16 +84,6 @@
               </a>
             </span>
 
-            <!-- Supplementary PDF link -->
-            <span class="link-block">
-              <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-              class="external-link button is-normal is-rounded is-dark">
-              <span class="icon">
-                <i class="fas fa-file-pdf"></i>
-              </span>
-              <span>Supplementary</span>
-            </a>
-          </span>
 
           <!-- Github link -->
           <span class="link-block">
@@ -123,22 +113,19 @@
 </div>
 </section>
 
-<!-- Teaser video-->
+
+
+
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/banner_video.mp4"
-        type="video/mp4">
-      </video>
+      <img src="static/images/fig2.png" alt="Poster Dataset Distillation (PoDD)" class="center-image" style="max-width: 100%; height: auto;">
       <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
+        We propose a simple yet effective method, named <strong>SED</strong>, to learn with noisy labels in a <strong>S</strong>elf-adaptiv<strong>E</strong> and class-balance<strong>D</strong> manner. Our SED integrates sample selection, label correction, and sample re-weighting.
       </h2>
     </div>
   </div>
 </section>
-<!-- End teaser video -->
 
 <!-- Paper abstract -->
 <section class="section hero is-light">
@@ -157,111 +144,65 @@
 </section>
 <!-- End paper abstract -->
 
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
-    </div>
-  </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
+<section class="section hero is-small">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full">
+        <div class="content">
+          <h2 class="title is-4">Self-Adaptive and Class-Balanced Sample Selection and Re-weighting</h2>
 
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          <img src="static/images/fig1.png" alt="Self-Adaptive and Class-Balanced Sample Selection and Re-weighting" class="center-image">
+          <div class="level-set has-text-justified">
+            <p>
+              (a-b) Self-adaptive and class-balanced sample selection based on predicted probability w.r.t. given labels. The blue curve indicates the class-specific selection thresholds. (c-d) Self-adaptive and class-balanced sample re-weighting based on correction confidence. The orange curve represents the class-specific confidence threshold.
+            </p>
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
-<!-- End youtube video -->
 
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4"
-            type="video/mp4">
-          </video>
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full">
+        <div class="content">
+          <h2 class="title is-4">Average Test Accuracy on CIFAR100N and CIFAR80N Under Various Noise Conditions</h2>
+
+          <img src="static/images/tab1.png" alt="Average Test Accuracy on CIFAR100N and CIFAR80N Under Various Noise Conditions" class="center-image">
+          <div class="level-set has-text-justified">
+            <p>
+              Experiments are conducted under symmetric and asymmetric label noise conditions. Results of existing methods are mainly drawn from previous works. † indicates methods re-implemented using their open-sourced code and default hyper-parameters.
+            </p>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </section>
-<!-- End video carousel -->
 
-<!-- Paper poster -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
+<section class="section hero is-small">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full">
+        <div class="content">
+          <h2 class="title is-4">Comparison of Test Accuracy on Real-World Noisy Datasets</h2>
 
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
+          <img src="static/images/tab2.png" alt="Comparison of Test Accuracy on Real-World Noisy Datasets" class="center-image">
+          <div class="level-set has-text-justified">
+            <p>
+              The table shows the experimental results of existing methods and SED on Web-Aircraft, Web-Bird, and Web-Car datasets. Results of existing methods are mainly drawn from previous works. † indicates methods re-implemented using their open-sourced code and default hyper-parameters.            </p>
+          </div>
+        </div>
       </div>
     </div>
-  </section>
-<!--End paper poster -->
+  </div>
+</section>
+
+
+
+
 
 <!--BibTex citation -->
   <section class="section" id="BibTeX">
@@ -285,5 +226,5 @@
 
     <!-- End of Statcounter Code -->
 
-  </body>
-  </html>
+</body>
+</html>
